@@ -31,11 +31,12 @@ namespace LibraryManagementSystem
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.booksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.booksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addNewBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +51,22 @@ namespace LibraryManagementSystem
             this.menuStrip.Size = new System.Drawing.Size(737, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
+            // 
+            // booksToolStripMenuItem
+            // 
+            this.booksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addNewBooksToolStripMenuItem,
+            this.viewBooksToolStripMenuItem});
+            this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
+            this.booksToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.booksToolStripMenuItem.Text = "Books";
+            // 
+            // addNewBooksToolStripMenuItem
+            // 
+            this.addNewBooksToolStripMenuItem.Name = "addNewBooksToolStripMenuItem";
+            this.addNewBooksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewBooksToolStripMenuItem.Text = "Add New Books";
+            this.addNewBooksToolStripMenuItem.Click += new System.EventHandler(this.addNewBooksToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
@@ -68,20 +85,12 @@ namespace LibraryManagementSystem
             this.toolStripStatusLabel.Size = new System.Drawing.Size(44, 17);
             this.toolStripStatusLabel.Text = "Durum";
             // 
-            // booksToolStripMenuItem
+            // viewBooksToolStripMenuItem
             // 
-            this.booksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addNewBooksToolStripMenuItem});
-            this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
-            this.booksToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.booksToolStripMenuItem.Text = "Books";
-            // 
-            // addNewBooksToolStripMenuItem
-            // 
-            this.addNewBooksToolStripMenuItem.Name = "addNewBooksToolStripMenuItem";
-            this.addNewBooksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addNewBooksToolStripMenuItem.Text = "Add New Books";
-            this.addNewBooksToolStripMenuItem.Click += new System.EventHandler(this.addNewBooksToolStripMenuItem_Click);
+            this.viewBooksToolStripMenuItem.Name = "viewBooksToolStripMenuItem";
+            this.viewBooksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewBooksToolStripMenuItem.Text = "View Books";
+            this.viewBooksToolStripMenuItem.Click += new System.EventHandler(this.viewBooksToolStripMenuItem_Click);
             // 
             // mdi_user
             // 
@@ -113,6 +122,7 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.ToolStripMenuItem booksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewBooksToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewBooksToolStripMenuItem;
     }
 }
 
