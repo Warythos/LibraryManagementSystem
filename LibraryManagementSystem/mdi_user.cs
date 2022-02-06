@@ -109,5 +109,11 @@ namespace LibraryManagementSystem
             addBookForm addBookForm = new addBookForm();
             addBookForm.Show();
         }
+
+        private void viewBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewBookForm viewBookForm = new viewBookForm();
+            viewBookForm.Show();
+        }
     }
 }
