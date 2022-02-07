@@ -133,5 +133,11 @@ namespace LibraryManagementSystem
             issueBooksForm issueBook = new issueBooksForm();
             issueBook.Show();
         }
+
+        private void returnBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            returnBookForm returnBook = new returnBookForm();
+            returnBook.Show();
+        }
     }
 }
