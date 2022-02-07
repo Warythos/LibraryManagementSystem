@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net.Mail;
+using System.Net;
 
 namespace LibraryManagementSystem
 {
@@ -70,6 +72,36 @@ namespace LibraryManagementSystem
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string i;
+            i = dataGridView2.SelectedCells[6].Value.ToString();
+
+            textBox2.Text = i.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+            smtp.EnableSsl = true;
+            smtp.UseDefaultCredentials = false;
+            // YOUR username and passwor
+            smtp.Credentials = new NetworkCredential("xxx@gmail.com", "xxxx");
+            MailMessage mail = new MailMessage("xxx@gmail.com", textBox1.Text, "this is for testing", textBox2.Text);
+            smtp.Send(mail);
+            MessageBox.Show("Mail Sent");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
