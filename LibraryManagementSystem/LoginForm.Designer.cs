@@ -94,14 +94,14 @@ namespace LibraryManagementSystem
             this.panel1.Controls.Add(this.passwordLabel);
             this.panel1.Location = new System.Drawing.Point(61, 29);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(444, 348);
+            this.panel1.Size = new System.Drawing.Size(403, 348);
             this.panel1.TabIndex = 5;
             // 
             // loginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(577, 450);
+            this.ClientSize = new System.Drawing.Size(512, 450);
             this.Controls.Add(this.panel1);
             this.Name = "loginForm";
             this.Text = "Login ";

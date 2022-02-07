@@ -60,12 +60,12 @@ namespace LibraryManagementSystem
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO books_info values('"+textBox1.Text +"','"+ textBox2.Text + "','"+ textBox3.Text + "','"+ textBox4.Text + "','"+ textBox5.Text + "','"+ textBox6.Text + "','" + textBox6.Text + "')";
+            cmd.CommandText = "INSERT INTO books_info values('"+textBox1.Text +"','"+ textBox3.Text + "','"+ textBox2.Text + "','"+ textBox4.Text + "','"+ textBox5.Text + "','"+ textBox6.Text + "','" + textBox6.Text + "')";
             cmd.ExecuteNonQuery();
             connection.Close();
             textBox1.Text = "";
-            textBox2.Text = "";
             textBox3.Text = "";
+            textBox2.Text = "";
             textBox4.Text = "";
             textBox5.Text = "";
             textBox6.Text = "";

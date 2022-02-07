@@ -231,7 +231,7 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "viewStudentInfoForm";
-            this.Text = "viewStudentInfoForm";
+            this.Text = "Student Info";
             this.Load += new System.EventHandler(this.viewStudentInfoForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
