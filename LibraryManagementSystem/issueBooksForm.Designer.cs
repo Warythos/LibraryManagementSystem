@@ -251,7 +251,7 @@ namespace LibraryManagementSystem
             this.ClientSize = new System.Drawing.Size(671, 593);
             this.Controls.Add(this.panel1);
             this.Name = "issueBooksForm";
-            this.Text = "issueBooksForm";
+            this.Text = "Book Issue";
             this.Load += new System.EventHandler(this.issueBooksForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -39,7 +39,7 @@ namespace LibraryManagementSystem
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandType = CommandType.Text;
-            command.CommandText = "SELECT * FROM issue_books WHERE student_enrollment='"+ enrollment_no.ToString() +"'and book_return_date= ''";
+            command.CommandText = "SELECT * FROM issue_books WHERE student_enrollment='"+ enrollment_no.ToString() +"'and book_return_date=''";
             command.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(command);
