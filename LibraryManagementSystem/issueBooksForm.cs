@@ -149,7 +149,7 @@ namespace LibraryManagementSystem
             {
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "INSERT INTO issue_books values ('" + enrollmentTBox.Text + "','" + studentNameTBox.Text + "','" + departmentTBox.Text + "','" + semTBox.Text + "','" + contactTBox.Text + "','" + emailTBox.Text + "','" + bookNameTBox.Text + "','" + issueDateTBox.Text + "'',')";
+                command.CommandText = "INSERT INTO issue_books values ('" + enrollmentTBox.Text + "','" + studentNameTBox.Text + "','" + departmentTBox.Text + "','" + semTBox.Text + "','" + contactTBox.Text + "','" + emailTBox.Text + "','" + bookNameTBox.Text + "','" + issueDateTBox.Text + "','"+ issueDateTBox.Text +"')";
                 command.ExecuteNonQuery();
 
                 SqlCommand commandUpdate = connection.CreateCommand();
