@@ -37,6 +37,9 @@ namespace LibraryManagementSystem
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.studentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +47,8 @@ namespace LibraryManagementSystem
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.booksToolStripMenuItem});
+            this.booksToolStripMenuItem,
+            this.studentToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
@@ -92,6 +96,29 @@ namespace LibraryManagementSystem
             this.toolStripStatusLabel.Size = new System.Drawing.Size(44, 17);
             this.toolStripStatusLabel.Text = "Durum";
             // 
+            // studentToolStripMenuItem
+            // 
+            this.studentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addStudentToolStripMenuItem,
+            this.viewStudentToolStripMenuItem});
+            this.studentToolStripMenuItem.Name = "studentToolStripMenuItem";
+            this.studentToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.studentToolStripMenuItem.Text = "Student";
+            // 
+            // addStudentToolStripMenuItem
+            // 
+            this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addStudentToolStripMenuItem.Text = "Add Student";
+            this.addStudentToolStripMenuItem.Click += new System.EventHandler(this.addStudentToolStripMenuItem_Click);
+            // 
+            // viewStudentToolStripMenuItem
+            // 
+            this.viewStudentToolStripMenuItem.Name = "viewStudentToolStripMenuItem";
+            this.viewStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewStudentToolStripMenuItem.Text = "View Student";
+            this.viewStudentToolStripMenuItem.Click += new System.EventHandler(this.viewStudentToolStripMenuItem_Click);
+            // 
             // mdi_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -123,6 +150,9 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.ToolStripMenuItem booksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewBooksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewBooksToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem studentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addStudentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewStudentToolStripMenuItem;
     }
 }
 

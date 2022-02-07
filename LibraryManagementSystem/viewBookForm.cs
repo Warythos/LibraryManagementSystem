@@ -91,7 +91,6 @@ namespace LibraryManagementSystem
         {
             panel3.Visible = true;
             int i;
-            var a = dataGridView1.SelectedRows[0].Cells[0].Value;
             i = Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString());
             try
             {
