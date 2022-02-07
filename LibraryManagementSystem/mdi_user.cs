@@ -145,5 +145,10 @@ namespace LibraryManagementSystem
             bookStockForm bookStock = new bookStockForm();
             bookStock.Show();
         }
+
+        private void booksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -118,7 +118,7 @@ namespace LibraryManagementSystem
                 fillGrid();
                 MessageBox.Show("Updated Successfully");
             }
-            else if(result == DialogResult.Cancel)
+            else
             {
                 int i;
                 i = Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString());

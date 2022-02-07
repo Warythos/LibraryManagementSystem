@@ -36,13 +36,13 @@ namespace LibraryManagementSystem
             this.viewBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ıssueBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.returnBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bookStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.bookStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +70,7 @@ namespace LibraryManagementSystem
             this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
             this.booksToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.booksToolStripMenuItem.Text = "Books";
+            this.booksToolStripMenuItem.Click += new System.EventHandler(this.booksToolStripMenuItem_Click);
             // 
             // addNewBooksToolStripMenuItem
             // 
@@ -98,6 +99,13 @@ namespace LibraryManagementSystem
             this.returnBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.returnBookToolStripMenuItem.Text = "Return Book";
             this.returnBookToolStripMenuItem.Click += new System.EventHandler(this.returnBookToolStripMenuItem_Click);
+            // 
+            // bookStockToolStripMenuItem
+            // 
+            this.bookStockToolStripMenuItem.Name = "bookStockToolStripMenuItem";
+            this.bookStockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bookStockToolStripMenuItem.Text = "Book Stock";
+            this.bookStockToolStripMenuItem.Click += new System.EventHandler(this.bookStockToolStripMenuItem_Click);
             // 
             // studentToolStripMenuItem
             // 
@@ -138,13 +146,6 @@ namespace LibraryManagementSystem
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(44, 17);
             this.toolStripStatusLabel.Text = "Durum";
-            // 
-            // bookStockToolStripMenuItem
-            // 
-            this.bookStockToolStripMenuItem.Name = "bookStockToolStripMenuItem";
-            this.bookStockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.bookStockToolStripMenuItem.Text = "Book Stock";
-            this.bookStockToolStripMenuItem.Click += new System.EventHandler(this.bookStockToolStripMenuItem_Click);
             // 
             // mdi_user
             // 
