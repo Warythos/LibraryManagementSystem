@@ -115,5 +115,17 @@ namespace LibraryManagementSystem
             viewBookForm viewBookForm = new viewBookForm();
             viewBookForm.Show();
         }
+
+        private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            add_student_info addStudent = new add_student_info();
+            addStudent.Show();
+        }
+
+        private void viewStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewStudentInfoForm viewStudent = new viewStudentInfoForm();
+            viewStudent.Show();
+        }
     }
 }
